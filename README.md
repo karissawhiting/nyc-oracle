@@ -1,6 +1,6 @@
 # NYC Oracle
 
-An interactive art + data project that turns cyclical signals in New York City open data into short prophecies. Participants specify a month and day and a prediction is generated based on historical patterns for that date.
+An interactive art + data project that turns cyclical signals in NYC Open Data into short prophecies. Participants specify a month and day and a prediction is generated based on historical patterns for that date.
 
 Prophecies are produced by mining NYC Open Data for recurring, seasonal, and cyclical patterns (e.g., noise complaints, tree blooms, MTA ridership, rat sightings, energy use). Selected data points for the requested date are processed and sent to a large language model via the {ellmer} API (called from R) which translates rhythms and signals into short, poetic predictions.
 
