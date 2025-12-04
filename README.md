@@ -40,6 +40,12 @@ Prophecies are produced by mining NYC Open Data for recurring, seasonal, and cyc
     - `get-datasets-and-metadata.R` - Metadata lookup and dataset discovery helpers for browsing and selecting candidate NYC datasets.
 
 
+## Overview Diagram
+
+<p align="center">
+  <img src="admin/images/workflow-diag.png" alt="Workflow diagram" />
+</p>
+
 ## Contact
 
 - For questions or contributions, please open an issue in the repository.
