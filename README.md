@@ -27,7 +27,7 @@ Prophecies are produced by mining NYC Open Data for recurring, seasonal, and cyc
 `scripts` has all scripts including `utils` which contain core helpers (data pulls, quantile categorization, seasonality scoring, prompt construction) used by the top-level scripts. 
 
 - `scripts`:
-    - `generate-prophecy.R` - Runs an example of the prototype pipeline. Assembles data for a requested month/day, builds LLM prompts, calls the chattr/LLM API, and formats the prophecy text used by the animation and printed card.
+    - `example-prophecy-pipeline.R` - Runs an example of the prototype pipeline. Assembles data for a requested month/day, builds LLM prompts, calls the chattr/LLM API, and formats the prophecy text used by the animation and printed card.
 
 
 - `scripts/utils`:
