@@ -4,7 +4,7 @@ An interactive art + data project that turns cyclical signals in New York City o
 
 Prophecies are produced by mining NYC Open Data for recurring, seasonal, and cyclical patterns (e.g., noise complaints, tree blooms, MTA ridership, rat sightings, energy use). Selected data points for the requested date are processed and sent to a large language model via the {ellmer} API (called from R) which translates rhythms and signals into short, poetic predictions.
 
-# Quick start
+## Quick start
 
 ### Prerequisites
 - R >= 4.5.2
@@ -17,11 +17,11 @@ Prophecies are produced by mining NYC Open Data for recurring, seasonal, and cyc
 3. Install dependencies 
 
 
-## Run Scripts
+### Run Scripts
 
 - Generate an example prophecy (local test) using `scripts/example-prophecy-pipeline.R`
 
-# Key files
+## Key files
 
 
 `scripts` has all scripts including `utils` which contain core helpers (data pulls, quantile categorization, seasonality scoring, prompt construction) used by the top-level scripts. 
