@@ -27,17 +27,20 @@ Prophecies are produced by mining NYC Open Data for recurring, seasonal, and cyc
 `scripts` has all scripts including `utils` which contain core helpers (data pulls, quantile categorization, seasonality scoring, prompt construction) used by the top-level scripts. 
 
 - `scripts`:
-    - `example-prophecy-pipeline.R` - Runs an example of the prototype pipeline. Assembles data for a requested month/day, builds LLM prompts, calls the chattr/LLM API, and formats the prophecy text used by the animation and printed card.
+    - `example-prophecy-pipeline.R` - Runs an example of the prototype pipeline. Assembles data for a requested month/day, builds LLM prompts, calls the chattr/LLM API, and renders prophecy text.
 
 
 - `scripts/utils`:
+
+    - `get-datasets-and-metadata.R` - Metadata lookup and dataset discovery helpers for browsing and selecting candidate NYC datasets.
+    
     - `analyze-and-process-cycles.R` - Utilities to compute counts by date, build full daily series, and produce seasonality/ACF scores.
 
-    - `categorize-values-by-date.R` - Quantile-based categorization helpers (e.g., `categorize_by_distribution`) used to turn numeric counts into ordered labels: very low, low, medium, high, very high.
+    - `categorize-values-by-date.R` - Distribution-based categorization helpers (`categorize_by_distribution`) used to turn numeric counts of dataset cycles into ordered labels: very low, low, medium, high, very high.
 
     - `generate-prophecy.R` - Helper functions for assembling the final data text that is sent to the LLM (prompt templates, token-safe formatting).
 
-    - `get-datasets-and-metadata.R` - Metadata lookup and dataset discovery helpers for browsing and selecting candidate NYC datasets.
+
 
 
 ## Overview Diagram
